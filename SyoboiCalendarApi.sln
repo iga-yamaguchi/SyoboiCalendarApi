@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SyoboiCalendarApi", "src\SyoboiCalendarApi\SyoboiCalendarApi.csproj", "{9399FD5B-7466-453F-8749-9BC8D4158B53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyoboiCalendarApi.UnitTests", "test\SyoboiCalendarApi.UnitTests\SyoboiCalendarApi.UnitTests.csproj", "{A33DD51E-06FC-4467-B79E-31B1497CC590}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9399FD5B-7466-453F-8749-9BC8D4158B53} = {9399FD5B-7466-453F-8749-9BC8D4158B53}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9399FD5B-7466-453F-8749-9BC8D4158B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9399FD5B-7466-453F-8749-9BC8D4158B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9399FD5B-7466-453F-8749-9BC8D4158B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9399FD5B-7466-453F-8749-9BC8D4158B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A33DD51E-06FC-4467-B79E-31B1497CC590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A33DD51E-06FC-4467-B79E-31B1497CC590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A33DD51E-06FC-4467-B79E-31B1497CC590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A33DD51E-06FC-4467-B79E-31B1497CC590}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C6264E7-8573-42BA-830B-56F1C374CB36}
+	EndGlobalSection
+EndGlobal
