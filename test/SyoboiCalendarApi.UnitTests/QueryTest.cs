@@ -9,7 +9,20 @@ namespace SyoboiCalendarApi.UnitTests
         public void CreateQueryTest()
         {
             var request = new CalendarRequest();
-            Assert.Equal(string.Empty, request.ToQuery());
+            request.UserId = "userid123";
+            request.UseCookie = true;
+            request.Start = new DateTime(2018, 5, 3);
+            request.Days = 2;
+
+            //Assert.Equal("user-id=userid123&use-cookie=True&start=2018/05/03 0:00:00&days=2", request.ToQuery());
+            Assert.Equal("user-id=userid123&use-cookie=1&start=2018-05-03&days=2", request.ToQuery());
+        }
+
+        [Fact]
+        public void GetPropertiesTest()
+        {
+            Example.Main();
+            Assert.True(true);
         }
     }
 }
