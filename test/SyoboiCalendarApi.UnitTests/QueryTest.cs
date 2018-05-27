@@ -14,7 +14,6 @@ namespace SyoboiCalendarApi.UnitTests
             request.Start = new DateTime(2018, 5, 3);
             request.Days = 2;
 
-            //Assert.Equal("user-id=userid123&use-cookie=True&start=2018/05/03 0:00:00&days=2", request.ToQuery());
             Assert.Equal("user-id=userid123&use-cookie=1&start=2018-05-03&days=2", request.ToQuery());
         }
 
