@@ -18,7 +18,7 @@ namespace SyoboiCalendarApi
         /// <summary>
         /// trueならクッキーのチャンネルフィルタを使用。
         /// </summary>
-        [QueryParam]
+        [QueryParam("cookie")]
         public bool UseCookie { get; set; }
 
         /// <summary>

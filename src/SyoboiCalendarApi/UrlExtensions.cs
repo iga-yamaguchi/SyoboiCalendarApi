@@ -19,10 +19,21 @@ namespace SyoboiCalendarApi
 
             foreach (PropertyDescriptor prop in props)
             {
-                queries.Add($"{prop.Name.ToKebabCase()}={ConvertToQuery(prop.GetValue(obj))}");
+                //var key = prop.Name.ToKebabCase();
+                var key = prop.Name.ToKebabCase();
+                var value = ConvertToQuery(prop.GetValue(obj));
+                queries.Add($"{key}={value}");
             }
 
             return string.Join('&', queries);
+        }
+
+        private static string GetQueryKey(object obj, string name)
+        {
+            var key = Attribute.GetCustomAttributes(
+                          obj.GetType().GetProperty(name),
+                          typeof(QueryParam));
+            return key.ToString();
         }
 
         static Type boolType = typeof(bool);
